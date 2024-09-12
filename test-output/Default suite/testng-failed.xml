@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.devtools.testcases.PerformanceTabDetails">
+      <class name="com.devtools.testcases.EmulatingInternetSpeed">
         <methods>
-          <include name="setup"/>
-          <include name="verifyRecordResponse"/>
+          <include name="verifyApplicationOnSlowInternetSpeed"/>
+          <include name="browserClose"/>
+          <include name="browserSetup"/>
         </methods>
-      </class> <!-- com.devtools.testcases.PerformanceTabDetails -->
+      </class> <!-- com.devtools.testcases.EmulatingInternetSpeed -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
