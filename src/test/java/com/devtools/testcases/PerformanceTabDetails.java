@@ -45,9 +45,7 @@ public class PerformanceTabDetails {
 	@Test(enabled=false)
 	public void verifyPerformanceTabDetails()
 	{
-
-//	   driver  = new ChromeDriver();
-
+     
 	   driver.get("https://stg-identity.mt.gov.sa/");
 	   
 	   driver.manage().window().maximize();
@@ -67,17 +65,12 @@ public class PerformanceTabDetails {
 	   // Assertions.assertTrue(metrics.get("DevToolsCommandDuration").doubleValue() > 0);
 	    System.out.println(metrics.get("Frames").intValue());
 //	    Assertions.assertEquals(12, metrics.get("Frames").intValue());
-	   
-		
 //	 	driver.close();
     }	
 	
 	@Test(enabled=false)
 	public void verifyBrowserCookiesDetails()
 	{
-//	   driver  = new ChromeDriver();
-
-	  // driver.get("https://stg-identity.mt.gov.sa/");
 	   
 	   DevTools devTools = ((HasDevTools) driver).getDevTools();
 	    devTools.createSession();
